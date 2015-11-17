@@ -1,0 +1,1171 @@
+{
+   "background_pages": {
+      "known": {
+         "bfipfkeoidmndggnnpobeenlamiclald": false,
+         "maeijollgfmffkncnabiigmkoomhjnhf": false
+      }
+   },
+   "browser": {
+      "clear_lso_data_enabled": true,
+      "hung_plugin_detect_freq": 2000,
+      "last_known_google_url": "http://www.google.co.in/",
+      "last_prompted_google_url": "http://www.google.co.in/",
+      "last_redirect_origin": "",
+      "plugin_message_response_timeout": 30000
+   },
+   "gpu_blacklist": {
+      "entries": [ {
+         "blacklist": [ "webgl" ],
+         "description": "ATI Radeon X1900 is not compatible with WebGL on the Mac.",
+         "device_id": [ "0x7249" ],
+         "id": 1,
+         "os": {
+            "type": "macosx"
+         },
+         "vendor_id": "0x1002",
+         "webkit_bugs": [ 47028 ]
+      }, {
+         "blacklist": [ "accelerated_compositing" ],
+         "cr_bugs": [ 59302 ],
+         "description": "GL driver is software rendered. Accelerated compositing is disabled.",
+         "gl_renderer": {
+            "op": "contains",
+            "value": "software"
+         },
+         "id": 3,
+         "os": {
+            "type": "linux"
+         }
+      }, {
+         "blacklist": [ "webgl" ],
+         "description": "The Intel Mobile 945 Express family of chipsets is not compatible with WebGL.",
+         "device_id": [ "0x27AE" ],
+         "id": 4,
+         "os": {
+            "type": "any"
+         },
+         "vendor_id": "0x8086"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 71381, 76428, 73910, 101225 ],
+         "description": "ATI/AMD cards with older or third-party drivers in Linux are crash-prone.",
+         "exceptions": [ {
+            "driver_vendor": {
+               "op": "contains",
+               "value": "AMD"
+            },
+            "driver_version": {
+               "number": "8.92",
+               "op": "\u003E="
+            }
+         } ],
+         "id": 5,
+         "os": {
+            "type": "linux"
+         },
+         "vendor_id": "0x1002"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 72938 ],
+         "description": "NVIDIA GeForce FX Go5200 is assumed to be buggy.",
+         "device_id": [ "0x0324" ],
+         "id": 8,
+         "os": {
+            "type": "any"
+         },
+         "vendor_id": "0x10de"
+      }, {
+         "blacklist": [ "webgl" ],
+         "cr_bugs": [ 73794 ],
+         "description": "NVIDIA GeForce 7300 GT on Mac does not support WebGL.",
+         "device_id": [ "0x0393" ],
+         "id": 10,
+         "os": {
+            "type": "macosx"
+         },
+         "vendor_id": "0x10de"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 72979, 89802 ],
+         "description": "Drivers older than 2009-01 on Windows are assumed to be buggy.",
+         "driver_date": {
+            "number": "2009.1",
+            "op": "\u003C"
+         },
+         "exceptions": [ {
+            "device_id": [ "0x29a2" ],
+            "driver_version": {
+               "number": "7.15.10.1624",
+               "op": "\u003E="
+            },
+            "vendor_id": "0x8086"
+         } ],
+         "id": 12,
+         "os": {
+            "type": "win"
+         }
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 74212 ],
+         "description": "ATI drivers older than 10.6 on Windows XP are assumed to be buggy.",
+         "driver_version": {
+            "number": "8.741",
+            "op": "\u003C"
+         },
+         "id": 13,
+         "os": {
+            "type": "win",
+            "version": {
+               "number": "5",
+               "op": "="
+            }
+         },
+         "vendor_id": "0x1002"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 74212 ],
+         "description": "NVIDIA drivers older than 257.21 on Windows XP are assumed to be buggy.",
+         "driver_version": {
+            "number": "6.14.12.5721",
+            "op": "\u003C"
+         },
+         "id": 14,
+         "os": {
+            "type": "win",
+            "version": {
+               "number": "5",
+               "op": "="
+            }
+         },
+         "vendor_id": "0x10de"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 74212 ],
+         "description": "Intel drivers older than 14.42.7.5294 on Windows XP are assumed to be buggy.",
+         "driver_version": {
+            "number": "6.14.10.5294",
+            "op": "\u003C"
+         },
+         "id": 15,
+         "os": {
+            "type": "win",
+            "version": {
+               "number": "5",
+               "op": "="
+            }
+         },
+         "vendor_id": "0x8086"
+      }, {
+         "blacklist": [ "multisampling" ],
+         "cr_bugs": [ 67752, 83153 ],
+         "description": "Multisampling is buggy in some ATI Mac cards.",
+         "exceptions": [ {
+            "device_id": [ "0x6760", "0x9488" ]
+         } ],
+         "id": 16,
+         "os": {
+            "type": "macosx"
+         },
+         "vendor_id": "0x1002"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 76703 ],
+         "description": "Intel mesa drivers are crash-prone.",
+         "id": 17,
+         "os": {
+            "type": "linux"
+         },
+         "vendor_id": "0x8086"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 84701 ],
+         "description": "NVIDIA Quadro FX 1500 is buggy.",
+         "device_id": [ "0x029e" ],
+         "id": 18,
+         "os": {
+            "type": "linux"
+         },
+         "vendor_id": "0x10de"
+      }, {
+         "blacklist": [ "accelerated_2d_canvas", "accelerated_compositing" ],
+         "cr_bugs": [ 87157 ],
+         "description": "Accelerated 2d canvas and accelerated compositing are not supported in Mac OSX version 10.5.",
+         "id": 19,
+         "os": {
+            "type": "macosx",
+            "version": {
+               "number": "10.5",
+               "op": "="
+            }
+         }
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 82232, 82541 ],
+         "description": "NVIDIA driver 260.19.06 on linux is crash-prone.",
+         "driver_vendor": {
+            "op": "=",
+            "value": "NVIDIA"
+         },
+         "driver_version": {
+            "number": "260.19.6",
+            "op": "="
+         },
+         "id": 20,
+         "os": {
+            "type": "linux"
+         },
+         "vendor_id": "0x10de"
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 87680, 90091 ],
+         "description": "NVIDIA driver 195.36.24 on linux is buggy for certain Quadro FX series cards.",
+         "device_id": [ "0x00cd", "0x00ce" ],
+         "driver_vendor": {
+            "op": "=",
+            "value": "NVIDIA"
+         },
+         "driver_version": {
+            "number": "195.36.24",
+            "op": "="
+         },
+         "id": 21,
+         "os": {
+            "type": "linux"
+         },
+         "vendor_id": "0x10de"
+      }, {
+         "blacklist": [ "all" ],
+         "description": "NVIDIA linux drivers older than 195.36.24 are assumed to be buggy.",
+         "driver_vendor": {
+            "op": "=",
+            "value": "NVIDIA"
+         },
+         "driver_version": {
+            "number": "195.36.24",
+            "op": "\u003C"
+         },
+         "id": 22,
+         "os": {
+            "type": "linux"
+         },
+         "vendor_id": "0x10de"
+      }, {
+         "blacklist": [ "all" ],
+         "description": "Mesa drivers in linux older than 7.11 are assumed to be buggy.",
+         "driver_vendor": {
+            "op": "=",
+            "value": "Mesa"
+         },
+         "driver_version": {
+            "number": "7.11",
+            "op": "\u003C"
+         },
+         "id": 23,
+         "os": {
+            "type": "linux"
+         }
+      }, {
+         "blacklist": [ "accelerated_2d_canvas" ],
+         "description": "Accelerated 2d canvas is unstable in Linux at the moment.",
+         "id": 24,
+         "os": {
+            "type": "linux"
+         }
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 95934, 94973 ],
+         "description": "ATI/AMD cards with older drivers in Linux are crash-prone.",
+         "exceptions": [ {
+            "driver_vendor": {
+               "op": "contains",
+               "value": "AMD"
+            },
+            "driver_version": {
+               "number": "8.92",
+               "op": "\u003E="
+            }
+         } ],
+         "gl_vendor": {
+            "op": "beginwith",
+            "value": "ATI"
+         },
+         "id": 27,
+         "os": {
+            "type": "linux"
+         }
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 95934, 94973 ],
+         "description": "ATI/AMD cards with third-party drivers in Linux are crash-prone.",
+         "gl_renderer": {
+            "op": "contains",
+            "value": "AMD"
+         },
+         "gl_vendor": {
+            "op": "beginwith",
+            "value": "X.Org"
+         },
+         "id": 28,
+         "os": {
+            "type": "linux"
+         }
+      }, {
+         "blacklist": [ "all" ],
+         "cr_bugs": [ 95934, 94973 ],
+         "description": "ATI/AMD cards with third-party drivers in Linux are crash-prone.",
+         "gl_renderer": {
+            "op": "contains",
+            "value": "ATI"
+         },
+         "gl_vendor": {
+            "op": "beginwith",
+            "value": "X.Org"
+         },
+         "id": 29,
+         "os": {
+            "type": "linux"
+         }
+      } ],
+      "name": "software rendering list",
+      "version": "1.22"
+   },
+   "gpu_blacklist_update": "1323926534.494153",
+   "local_state": {
+      "multiple_profile_prefs_version": 3
+   },
+   "ntp": {
+      "intro_display_count": 11,
+      "promo_locale": "en-US",
+      "promo_version": 7,
+      "webstore_enabled": true
+   },
+   "printing": {
+      "print_preview_enabled_once": true
+   },
+   "profile": {
+      "info_cache": {
+         "Default": {
+            "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_0",
+            "name": "Default Profile"
+         }
+      },
+      "last_used": "Default"
+   },
+   "protocol_handler": {
+      "excluded_schemes": {
+         "afp": true,
+         "data": true,
+         "disk": true,
+         "disks": true,
+         "file": true,
+         "hcp": true,
+         "javascript": true,
+         "mailto": false,
+         "ms-help": true,
+         "news": false,
+         "nntp": true,
+         "shell": true,
+         "snews": false,
+         "vbscript": true,
+         "view-source": true,
+         "vnd": {
+            "ms": {
+               "radio": true
+            }
+         }
+      }
+   },
+   "safe_browsing": {
+      "client_key": "5uMNgRo1QjLL0DnHSrCxKA==",
+      "wrapped_key": "AKEgNiugtUwEyUfE1gVh-Zk1_zfvt0egbluS6x3IoYQE-zFdWQFLEIV9MZqnUBdHKCbPcHWT9raFXW9jXALcqGFVanL-8lYMLQ=="
+   },
+   "shutdown": {
+      "num_processes": 9,
+      "num_processes_slow": 2,
+      "type": 1
+   },
+   "uninstall_metrics": {
+      "installation_date2": "1299594277",
+      "launch_count": "1656"
+   },
+   "user_experience_metrics": {
+      "session_id": 1655,
+      "stability": {
+         "breakpad_registration_fail": 0,
+         "breakpad_registration_ok": 17,
+         "crash_count": 0,
+         "debugger_not_present": 17,
+         "debugger_present": 0,
+         "exited_cleanly": true,
+         "incomplete_session_end_count": 0,
+         "last_timestamp_sec": "1336322867",
+         "launch_count": 17,
+         "launch_time_sec": "1336322130",
+         "page_load_count": 0,
+         "renderer_crash_count": 0,
+         "renderer_hang_count": 0,
+         "session_end_completed": true,
+         "stats_buildtime": "1335546393",
+         "stats_version": "18.0.1025.168"
+      }
+   },
+   "was": {
+      "restarted": false
+   }
+}
+                                                                                                                                               d10:.fileguard40:8AA0BE5B82B53D1A898A94B770B62347887E7ABB11:activations0:15:add_dialog_histl21:C:\Users\HP\Downloadse9:addprewnd8:  -  17:addprewndexpandedi1e4:appsd7:applistld22:btinstall_lastmodified0:12:lastmodified29:Fri, 13 Apr 2012 21:44:24 GMT4:path54:C:\Users\HP\AppData\Roaming\uTorrent\apps\player.btapped22:btinstall_lastmodified0:12:lastmodified29:Fri, 27 Jan 2012 00:28:42 GMT4:path52:C:\Users\HP\AppData\Roaming\uTorrent\apps\plus.btapped22:btinstall_lastmodified0:12:lastmodified29:Wed, 01 Feb 2012 00:43:06 GMT4:path62:C:\Users\HP\AppData\Roaming\uTorrent\apps\welcome-upsell.btapped22:btinstall_lastmodified0:12:lastmodified29:Thu, 06 Oct 2011 23:35:23 GMT4:path88:C:\Users\HP\AppData\Roaming\uTorrent\apps\3609FC884502A1DF0AA5D9D160C827BB1BD51FC9.btappeee4:asszi0e9:autostarti1e3:av28:        9:bind_porti37494e7:born_oni12975565213e11:boss_key_pw0:30:bt.no_connect_to_services_list23:25,80,110,443,6666,66677:cfu_seqi14e8:channelsd11:channellistlee17:check_update_betai0e3:cid24:ÚÒ‰«¸6ªò¿KĞ¢	O<ÅÂ¤4:cids56:ÚÒ¦˜ ¸)a•‡ß+^èHŒ¨šLÜ@_OÚÒ‰«¸6ªò¿KĞ¢	O<ÅÂ¤Q­¦O7:ct_histle23:daily_dna_download_hist248:                                                                                                                                                                                                                                                        21:daily_dna_upload_hist248:                                                                                                                                                                                                                                                        19:daily_download_hist248:Ñ                                                                                                                                                                                                                                                     25:daily_local_download_hist248:\*                                                                                                                                                                                                                                                      23:daily_local_upload_hist248:ï                                                                                                                                                                                                                                                      17:daily_upload_hist248:£Q                                                                                                                                                                                                                                                      7:devicesd7:deviceslee22:dl_image_modifiedsincel75:http://www.mininova.org/search/?cat=0&search=	Sat, 30 Oct 2010 22:57:22 GMT80:http://www.bittorrent.com/search?client=%v&search=	Sat, 05 May 2012 00:10:44 GMTe18:dna_download_totali0e8:dna_onlyi0e16:dna_upload_totali0e8:dnastated7:objectslee8:exe_path44:C:\Program Files (x86)\uTorrent\uTorrent.exe10:exe_seriali1312451065e2:fdi3e21:featured_apps_version29:Thu, 06 Oct 2011 23:35:23 GMT3:fgti558000e15:gui.dlrate_menu45:0,5,10,15,20,30,40,50,100,150,200,300,400,50026:gui.plus_upsell_foregroundi1e24:gui.show_notorrents_nodei0e15:gui.ulrate_menu45:0,5,10,15,20,30,40,50,100,150,200,300,400,5008:hashfaild5:accumi0e5:nsampi1e4:peaki0ee12:input_codecsde25:install_modification_timei0e16:install_revisioni26821e8:installsle20:isp.peer_policy_expyi1336325213e15:isp.primary_dns14:208.67.222.22217:isp.secondary_dns14:208.67.220.22011:license_key0:3:liti1331091635e3:lsci5230001e10:lvc_addpred7:columnsld2:id11:FI_COL_NAME5:statei0e5:widthi160eed2:id18:FI_COL_DESTINATION5:statei129e5:widthi150eed2:id11:FI_COL_SIZE5:statei2e5:widthi75eee8:sortmodei0ee7:lvc_catd7:columnsle8:sortmodei0ee14:lvc_conversiond7:columnsld2:id19:FI_COL_MEDIA_LENGTH5:statei133e5:widthi80eed2:id14:FI_COL_TORRENT5:statei134e5:widthi250eed2:id12:FI_COL_ORDER5:statei0e5:widthi30eed2:id24:STRID_FI_COL_DESTINATION5:stş	    0  Â          L       !        Â  TÅ          //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <?xml version="1.0" encoding="utf-8"?>
+<DYNAMIC_MENU>
+  <PERMISSIONS>
+    <EDIT>True</EDIT>
+    <MOVE>True</MOVE>
+    <DELETE>True</DELETE>
+  </PERMISSIONS>
+  <USER_ATTRIBUTES>
+    <PERMISSION>FULL</PERMISSION>
+    <SHOW_IN_CHEVRON>True</SHOW_IN_CHEVRON>
+  </USER_ATTRIBUTES>
+  <UNIQUE_COMP_ID>51300001</UNIQUE_COMP_ID>
+  <DISPLAY_TEXT></DISPLAY_TEXT>
+  <DISPLAY_ICON></DISPLAY_ICON>
+  <LAST_UPDATE_TIME />
+  <BUTTON>
+    <DEFAULT_BUTTON_TEXT>OtherAppContextMenu</DEFAULT_BUTTON_TEXT>
+    <BUTTON_ICON_URL />
+    <BUTTON_TOOLTIP />
+  </BUTTON>
+  <MENU>
+    <UNIQUE_COMP_ID>51300002</UNIQUE_COMP_ID>
+    <CAPTION />
+    <ICON_URL />
+    <HINT />
+    <DELETABLE>True</DELETABLE>
+    <ORIGIN>PUBLISHER</ORIGIN>
+    <EDITABLE>True</EDITABLE>
+    <MENU_ITEM>
+      <CAPTION>Get More Apps</CAPTION>
+      <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Browse.png</ICON_URL>
+      <HINT>Get more apps from lots of publishers</HINT>
+      <UNIQUE_COMP_ID>51300003</UNIQUE_COMP_ID>
+      <DATA>
+        <TYPE>LINK</TYPE>
+        <LINK>
+          <URL>http://Apps.Conduit.com/</URL>
+        </LINK>
+      </DATA>
+    </MENU_ITEM>
+    <MENU_ITEM>
+      <CAPTION>Share Toolbar</CAPTION>
+      <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Share.png</ICON_URL>
+      <HINT>Share this toolbar</HINT>
+      <DATA>
+        <TYPE>POP_HTML</TYPE>
+        <POP_HTML>
+          <URL>http://client.conduit-storage.com/gadgets/gigya/gigya.html?url=EB_DOWNLOAD_PAGE&amp;name=EB_TOOLBAR_NAME&amp;image=EB_TOOLBAR_LOGO</URL>
+          <DEFAULT_TARGET>_SELF</DEFAULT_TARGET>
+          <WIDTH>310</WIDTH>
+          <HEIGHT>310</HEIGHT>
+          <OFFSET_X>0</OFFSET_X>
+          <OFFSET_Y>0</OFFSET_Y>
+          <SCROLL>False</SCROLL>
+          <SAVE_RESIZED_SIZE>False</SAVE_RESIZED_SIZE>
+          <SAVE_LOCATION>False</SAVE_LOCATION>
+        </POP_HTML>
+        <SOURCE>User</SOURCE>
+      </DATA>
+      <UNIQUE_COMP_ID>51300004</UNIQUE_COMP_ID>
+    </MENU_ITEM>
+    <MENU_ITEM>
+      <CAPTION>Show/Hide</CAPTION>
+      <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Hide.png</ICON_URL>
+      <HINT></HINT>
+      <DATA>
+        <TYPE>APPS_MENU</TYPE>
+        <APPS_MENU>
+          <TYPES>
+            <TYPE>All</TYPE>
+          </TYPES>
+        </APPS_MENU>
+      </DATA>
+      <UNIQUE_COMP_ID>51300005</UNIQUE_COMP_ID>
+    </MENU_ITEM>
+    <SEPARATOR>
+      <UNIQUE_COMP_ID>100000001</UNIQUE_COMP_ID>
+    </SEPARATOR>
+    <MENU_ITEM>
+      <CAPTION>Refresh Toolbar</CAPTION>
+      <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Refresh.png</ICON_URL>
+      <HINT>Get the latest updates for your toolbar</HINT>
+      <DATA>
+        <TYPE>COMMAND</TYPE>
+        <COMMAND>
+          <TYPE>REFRESH_TOOLBAR_VIEW</TYPE>
+        </COMMAND>
+      </DATA>
+      <UNIQUE_COMP_ID>51300006</UNIQUE_COMP_ID>
+    </MENU_ITEM>
+    <MENU_ITEM>
+      <CAPTION>Toolbar Options</CAPTION>
+      <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Options.png</ICON_URL>
+      <HINT>Manage your toolbar settings</HINT>
+      <DATA>
+        <TYPE>COMMAND</TYPE>
+        <COMMAND>
+          <TYPE>OPTIONS</TYPE>
+        </COMMAND>
+      </DATA>
+      <UNIQUE_COMP_ID>51300007</UNIQUE_COMP_ID>
+    </MENU_ITEM>
+    <MENU>
+      <CAPTION>More...</CAPTION>
+      <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/More.png</ICON_URL>
+      <HINT />
+      <MENU_ITEM>
+        <CAPTION>Help</CAPTION>
+        <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Upgrade.png</ICON_URL>
+        <HINT>Help and Troubleshoot</HINT>
+        <DATA>
+          <TYPE>LINK</TYPE>
+          <LINK>
+            <URL>EB_DOWNLOAD_PAGEHelp/?version=EB_TOOLBAR_VERSION</URL>
+          </LINK>
+        </DATA>
+        <UNIQUE_COMP_ID>51300008</UNIQUE_COMP_ID>
+      </MENU_ITEM>
+      <MENU_ITEM>
+        <CAPTION>Privacy</CAPTION>
+        <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Privacy.png</ICON_URL>
+        <HINT>Toolbar Information</HINT>
+        <DATA>
+          <TYPE>LINK</TYPE>
+          <LINK>
+            <URL>EB_DOWNLOAD_PAGEPrivacy/</URL>
+          </LINK>
+        </DATA>
+        <UNIQUE_COMP_ID>51300009</UNIQUE_COMP_ID>
+      </MENU_ITEM>
+      <MENU_ITEM>
+        <CAPTION>About</CAPTION>
+        <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/About.png</ICON_URL>
+        <HINT>Toolbar Information</HINT>
+        <DATA>
+          <TYPE>COMMAND</TYPE>
+          <COMMAND>
+            <TYPE>ABOUT</TYPE>
+          </COMMAND>
+        </DATA>
+        <UNIQUE_COMP_ID>51300010</UNIQUE_COMP_ID>
+      </MENU_ITEM>
+      <MENU_ITEM>
+        <CAPTION>Contact</CAPTION>
+        <ICON_URL>http://storage.Conduit.com/bankImages/ConduitEngine/ContextMenu/Contact.png</ICON_URL>
+        <HINT>Contact us</HINT>
+        <DATA>
+          <TYPE>LINK</TYPE>
+          <LINK>
+            <URL>EB_DOWNLOAD_PAGEContact/</URL>
+          </LINK>
+        </DATA>
+        <UNIQUE_COMP_ID>51300011</UNIQUE_COMP_ID>
+      </MENU_ITEM>
+    </MENU>
+  </MENU>
+</DYNAMIC_MENU>                                                                                                                                                                                                                                                                                                                                                       ë?ûÎ—“«äWş’/ÿşß÷—´ÿÔ³¿ùş¿s}µ÷ı£?ó·üĞoüüÑø?ô—ş­ÿÓıïşå¿Æù+ÿÏ²úış‚¿äñ_ğ35å“³¿ô×üÏÿöüù·ÿ–_ùÉß»ı—ı÷ãßÿ»Ùıfÿ÷[ü‰¿şü×ş;ÿÀùŸùı	úOı]ÿİï÷7şé³?ÿWü%é÷şíÿúÍWÕ_°zø_ü}ÿë/şçÿ¶ÿâO9ü“·ÿİßaö/ş{¿Ñoz÷Á¯óÿmĞ?òì¼ù¾ı×ü¿ÿïø{ş{Ññ‡ş¿÷_ô§Ï¥¿ëò×ûì7Oÿ’?êŸûÇì7ú•÷_ı÷.ÿåÿâwÿ…ßïüÉßùßÿš‹/¿ÿı;Oş—‡ö·~ûÿä¿øoÿÆßî·ùş_ñSöïı'şî¿óÕŸpı{ıª­lı;Ÿıóàoû'ş#æ'Ë¿äõoöŞmşı?ëOÿMë_ó/>şéÿö—ÿq'¿ìŸŸş«ÿÀOı»¿Íö§û·şwşÚ?ã/öşş~ãáÿZÿã¯ÿgÿIÿìŸô—ÿoã?z´õÿæÜå¿ñÏşªğ?¿û7ÿÚëûàòKÿ£ím«=û·_şÿóû/]ık?ñ÷ü™¿ò¿;üÓÿä_óÉı_÷wûñ?á_ùÛÿéßá—ı’ÿä×ø]ÿßüÓûúMŞş)ÿ×ÿoş:ä.üŠÿíİñ÷ü³Ï×êß÷§ş%ÅóÅÙñçşÄoókşZégö¿ò7üå?ó?ı÷/Ò?÷úÎ/ı÷~Ë_ï×|ù?µ÷»oÿÿìgãßñ·ø“~Í?è×ù¿ÿ¥G?õııî“ßlÿßúßşµ³ÿâ—Ì'¿øè/üw«¿ä¯½Zıæÿãô}ñ×şOş óï?<¬ş›ÿğ«¿3ûş›ßààùÚ?ş·ø·Òâ¨ÿ©?xô;üÔßòùñÿğÅ_zñ'½ù‰ßáòïÿñŸù·ıª¿ÿ÷Ìÿ¯¿éïşW~£ßâïï÷úcÿ¤Çoş_üGşªì7øİöÃOì7øõ~åçÁ÷~çó?åOüìß}óü)ÄŸü_şq[şÒÖóOş½G¿âÿ<Ûİú-vÏ¿îoyõÇÿzW£ûWÿßı?ùÕöïô;ÿÚ?öÇşæÏşõÿõÏÿİ—ë?ñú¿ıO_­÷Şµôÿşô·ş¿ÿ„»Öÿ6}öÑÎ/|rşıäú»ş-Åëæ·xûÏı-é3ÿï¯¶ÿèßğ¿şß~úoûçşĞß÷?úxù¿¿ûÿò¿æüÍ¯ÿ”_òï|şÏÿwÿäşä§?ñÉßÿSÿşüÜÿç~ÛñşñŸò§üVõŸókÿƒß?Ïü–í?õ§ü^_´¿ÛWßşÓıæÖ÷áÎòŸıÿ±ßòÏùıÿ¹ìwù}ÿğ_oÿ÷üW¾õ;üÊÏşÂŸ~úo?ıüßû—şØ;¿ÉÉoñOımŸ\ÿgÿèOızÿâÿúÓ¿ßƒßrÿwøÛ¿úCòÿùß;úışçßìïùk^}ö7ınçŸøoÔÿ—¿ùù_¿üÛşïüó÷ïÿ'ûœÿ­ÿĞßôæÿø³ïd¿àÿ»¿÷¯ıßw~æOüëÿÉ?q}ğ{şcÿó_ş‹ÿ­§ß—ÿÆ“G¿á¿÷÷ÿÏÙ_òOş=ÇÿÜo{ugë·øóşÓ?òüÿEÿÃïûG÷Éo™ıÁÿóïúÛüÙØÿ•ıÒ¿ç7ş-ş®?à/Şù£?ş÷&î¯÷şwÿü?úÿÕşÏüßú[~Ã_ÿşßöËş†_üßıçwÿ—¿öÅßù§ş9ÿ÷úïıo¿î?ıï½©ÿÏõåo÷æ-îıæÿÖ¯ó‹~³³üñÿùëÿâ¿î/ÿıê7øeÇ_ù«ÿšÿùÿ~¯ßîßüÿñÿÔïÓüï§À¿û‹Ë¿æßú/ÿ¨ìòÿşuÿºö÷û«ÿúíÿåÿÆ?ÿ7ü_Ÿ~ö7=Úû%?ñ‹ÿ—ßø¯ù¾õ÷ı¿ÿ_x‘7[ÆŸı«~_õ÷ÿÿûÿú7şúÄÿı+ÿìÿòÎï±ÿ§Üûşªÿûü/ùÏßèOøKÿøäïú~ìÿıAw~Éïøöjşù¿èÿÁÏ|ÿOøşø?æúSÿÁõ«_óÉoóOÿ®[Æ_û¯ıAÿÃßúÏÿ¯o·şÏ¿äÏŞzò.ÿñíoıê³¿ïşßû·ı‘ß?üÛı…ÿÿöü¯şCşãüûYòûşù¿Æ_õ×üSú¯ÿŸü×_şêïü†ÿ×ßşûüŞï?òæí¿ø§ÿøóÿãû¿Ûw~ñÿ¸ıïı#¿åßùÇÿÚÿÂùŸüıkŸş‰ÿğÿôwı…ÿÉï[üÿÖø÷”ÿØóÿá7ıO~æ·úOÿÜíÏùGş‰oÿ…ßûèÅüOøßş÷¿÷/üï¾óOŞùöß·ú¿·ÿ†;_½Ü¾¨¶ş½ÿô/şàÕÁ÷ÿÉüã_kû?ú5şºÿä¿øgåÉ¯óWşiéG?şö·şGÿÑ¿ñÿ!ÿõñ3Îÿı/öíàßıu~ÛêÏø+ı‡ÿÖ?ôü‹ñÿüEàßıü›×ÿâ?ÿú­ßÿıÿõ¿ìÑ?ÿ­_ñÿG÷şÜæåwşÚÿñ}õåOüÁ_ıÅßûuÇ¿ç¿ÿ'İ[Ïÿë¿(9ı;ş‰;wşÃÿë÷şş™¿ã¯ÿkÿüÿö?ÿ×î½øËü%æ?şßş«õo±û×ş]Æ/ùSÿ®_ÿoúşòÏóûwş¥Oª?ğoû•ÿÇïôoü×Ïÿ¤ş?}–şŞËÿã7ùÁûŸüZÿ×oü?û‰/>ùãé_~òwÿ%ÿğ'¿Æüöwıµÿ·ô_ÜıëÿÉ_õê}õ“?ñ§ÿõ÷îüOÿüŸz÷åïóWÿ—İúıøÿôOş³éÿñ·ü¾‡ÃŸö›ÿÉï/ûmÿìOø#õ/ùä×ù±¿æŸÿµæ¿æşïöGnıûõ¯·õqû¿ıŠÿóO{ò×ÿ¯ş¿ıÖÿĞïñ»ü½¿Ö·?~÷ïÿ	ÂßıÙÿøâ·ÿÿ?ââWÿµÿVù¯~:ş%ÿç?ñ«ş‚ã_ğı’ì§ÿŞ¿í·ü÷ÿİùåƒ×¿Vz¹ø›ãÏıÙÿúG~ù¾ûµş¦íø÷şæoı»¿ã?ù§üÏhö—ı—Õ¿ùhô›ıöÿşÓÿá÷ÿÿÄÿ5ûçşéoÿóÿú·şşï?ÿ7ømŸ?öàşÙ¿Åü¯?øGşïßòêÿ~üü!«ÿø×ıOÿ´oÿÿı/¾ÿûı÷ÿÌëßéÍoö‡ı÷Å¿ù;ÿóÿû?ùÿâ?ìûËşÿàwıMÿ»ÿóWü×ÔÖ/ş{í¿ôş
+    0           W 	      !          TÅ          //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<panelset>
+
+  <application colorIcon="false" docView="design" maximize="true" rect="164 0 1065 728"/>
+
+  <document maximize="true" rect="0 0 500 423"/>
+
+  <panelframe dock="right" height="677" width="236" x="1" y="12">
+    <panelcontainer expanded="false" height="115" visible="true">
+      <panel height="115" id="BL" unconstrainedheight="0" unconstrainedwidth="0" width="208"/>
+    </panelcontainer>
+    <panelcontainer expanded="false" height="300" visible="true">
+      <panel height="300" id="objects" showLabel="true" unconstrainedheight="208" unconstrainedwidth="208" viewStyle="tabs" width="208"/>
+    </panelcontainer>
+    <panelcontainer expanded="true" height="283" visible="true">
+      <panel height="283" id="css styles" unconstrainedheight="300" unconstrainedwidth="208" width="232"/>
+      <panel height="283" id="apElements" unconstrainedheight="300" unconstrainedwidth="208" width="232"/>
+      <panel height="283" id="tag inspector" unconstrainedheight="300" unconstrainedwidth="208" visibleTab="false" width="232"/>
+    </panelcontainer>
+    <panelcontainer expanded="false" height="285" visible="true">
+      <panel height="285" id="BusinessCatalyst" unconstrainedheight="0" unconstrainedwidth="0" width="208"/>
+    </panelcontainer>
+    <panelcontainer expanded="true" height="270" visible="false">
+      <panel height="270" id="database" unconstrainedheight="0" unconstrainedwidth="0" width="208"/>
+      <panel height="270" id="data sources" unconstrainedheight="0" unconstrainedwidth="0" width="208"/>
+      <panel height="270" id="server scripts" unconstrainedheight="0" unconstrainedwidth="0" width="208"/>
+      <panel height="270" id="server components" unconstrainedheight="0" unconstrainedwidth="0" visibleTab="false" width="208"/>
+    </panelcontainer>
+    <panelcontainer expanded="true" height="282" visible="true">
+      <panel height="282" id="site" unconstrainedheight="300" unconstrainedwidth="232" width="232"/>
+      <panel height="282" id="assets" unconstrainedheight="300" unconstrainedwidth="232" width="232"/>
+      <panel height="282" id="snippets" unconstrainedheight="300" unconstrainedwidth="232" visibleTab="false" width="232"/>
+    </panelcontainer>
+    <panelcontainer expanded="true" height="180" visible="false">
+      <panel height="180" id="frames" unconstrainedheight="0" unconstrainedwidth="0" width="208"/>
+    </panelcontainer>
+    <panelcontainer expanded="true" height="180" visible="false">
+      <panel height="180" id="history" unconstrainedheight="0" unconstrainedwidth="0" width="208"/>
+    </panelcontainer>
+  </panelframe>
+
+  <panelframe dock="bottom" height="127" width="1119" x="0" y="1">
+    <panelcontainer expanded="true" height="107" visible="true">
+      <panel height="107" id="propertiesMfc" unconstrainedheight="107" unconstrainedwidth="990" width="1115"/>
+    </panelcontainer>
+    <panelcontainer expanded="true" height="52" visible="false">
+      <panel height="52" id="properties" unconstrainedheight="52" unconstrainedwidth="820" width="990"/>
+    </panelcontainer>
+    <panelcontainer expanded="true" height="115" visible="false">
+      <panel height="115" id="search" unconstrainedheight="990" unconstrainedwidth="990" visibleTab="false" width="1115"/>
+      <panel height="115" id="reference" unconstrainedheight="990" unconstrainedwidth="990" width="1115"/>
+      <panel height="115" id="validation" unconstrainedheight="990" unconstrainedwidth="990" width="1115"/>
+      <panel height="115" id="btc" unconstrainedheight="990" unconstrainedwidth="990" width="1115"/>
+      <panel height="115" id="linkchecker" unconstrainedheight="990" unconstrainedwidth="990" width="1115"/>
+      <panel height="115" id="reports" unconstrainedheight="990" unconstrainedwidth="990" width="1115"/>
+      <panel height="115" id="ftp log" unconstrainedheight="990" unconstrainedwidth="990" width="1115"/>
+      <panel height="115" id="server debug" unconstrainedheight="990" unconstrainedwidth="990" width="1115"/>
+    </panelcontainer>
+  </panelframe>
+
+</panelset>
+      <?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+    
+		<em:id>{687578b9-7132-4a7a-80e4-30ee31099e03}</em:id>
+		<em:name>uTorrentControl2 Community Toolbar</em:name>
+    <em:unpack>true</em:unpack>
+		<em:version>3.12.2.3</em:version>
+    <em:description>Delivers all our best apps to your browser.</em:description>
+    <em:creator>Conduit Ltd.</em:creator>
+		<em:homepageURL>http://www.conduit.com</em:homepageURL>
+		<em:aboutURL>chrome://utorrentcontrol2/content/about.xul</em:aboutURL>
+		<em:optionsURL>chrome://utorrentcontrol2/content/options.xul</em:optionsURL>
+		<em:updateURL>https://ffupdate.conduit-services.com/Default.ashx?ctid=CT3072253&amp;ver=3.12.2.3&amp;itemId=%ITEM_ID%&amp;itemMaxAppVersion=%ITEM_MAXAPPVERSION%&amp;itemStatus=%ITEM_STATUS%&amp;appId=%APP_ID%&amp;targetAppVersion=%APP_VERSION%&amp;currentAppVersion=%CURRENT_APP_VERSION%&amp;updateType=%UPDATE_TYPE%</em:updateURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:utorrentcontrol2.jar">
+				<em:package>content/</em:package>
+				<em:skin>skin/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.0</em:minVersion>
+				<em:maxVersion>12.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+
+</RDF>
+                                  ûoşG/ü\ü³×¿×ßPısßş~÷ÿíş~ï?ózñïü‚?â×ü›¿ÿç~ñ›~ñ¿şÿÆÿwşQ×¿ıïü‡ÿşïuşãÿö¿äÏı}¾úâÙ¯ó}ë7~ıüÒßí×Zü:õ¯ñ›ş×ÿ°ú·şË÷{Xı‹ÿì?ùCÿı¿àúC¦ÿáøÛÿæ“?èùç¿öÑ¿óİù§—¿í«Ë?ùOş¶ÿ¤ßîŸ¨ÿ?à×ú+~×ëÿáñ¯ş]şúıvñã?Q·ÅğOş.GWÿäoõ»Îşı¿÷×ıoæÿÉüÉ¿û›ÿõáú[¯ÿÂõooÿ˜_çïü¿ÿéÿø[şÍ?ÿ’‡É¯óïşÑ‹¿äèÿüM~Ûôøßş£¯ÿ¤ÿè×øWñŸğéŸöwş×¿àÏùíÿÇèÙŞ~âÉüwİı7ÿÛßyı?ÕÏòìoş½~¿ãç_|ÿx÷/ücÿû¿ı7ûÍÿÀõoõÙïñ‡ş¹ÿùvÿû¿Öïóıøì³?ì/}ñ—ş®×Åßü¿ıç_ü±şÁ/üCş›ä|ô‡üùÛÿı»¿{øà÷ûóÿ—'È¯‘ü†ÿó¯÷âWıi¿â<üÓş»»úkı“Ñ³éÃ¿ñûÏÿà_ûŞŸûOü}ı™¿Æ?û¦ßôg|üëü.íô_ë×xöægşœ_=ù-ÿÊ¿=ùwÿ½?ş¿û7~Ûåı!¿ÎòıÌøã¿ÖŸø/üõÿÚŸüK~½'ÿÄıâwÿÌ¯1ú«ßê?üû,ù#ÿúò¿õ¿ó;ü6ù¯úş?ñãÿÂÚüOÿæoø¼ú?ïü‘ÿOıI¿Æ¿xÿoù×ş«¿ñõ_ş7ıGÛÿÿ.³õÖ_ù?İÿ{~ùß÷Wıª¿ôø‹~Ãßò¿»óüÿÖwü_¿ò\şøïõëü!¿Í/şßİßâ‹ÿcú‹şª?á7ÿş—?éïû=.&Íoô_=ı»şÅßãü_ş”şİ¿æ§~ß¿ÿ7üÃçïÿÿÅËÇø¯ûÇüøèÿ½~Ûÿö7øçõoú/şÅ_ü·×õëäÿçÇ?yïïøşô?æù¥ÿÉ³ß¥ùñöï÷?üÿæOÿ;¯¾ı,·ıŸø'ş¶­ßğ_ÿ%{ŸÿõŸÿ¥ûË_ÿ>ÙŸù/ü9»¿óıíïıç‡ßö'Óì»üSîıUg?õ[LÿÍ¿êoúßşĞÿø7ûößóş¢ÿìı»~Ñ¯ó[ş=/>øOÿC¿Áÿøïş¿ÿŸùgı†ÿáÿòÉß¶{çû;÷÷—şáîWÕ¿ñ½ÿéÕ/üW¾uù7ı6?ıÿËş×ş}ä¿ÿ+¾úò“/şÓßùÏø'ş”¿ğãßí·øµ¯æ§ÿÿæ·ı#ÿ”¿ı«?éÅóôû£~÷Éoşÿ”rµ|µõŸı'¯ş°?æÏ9ş?ş¢ÿêñwş™ÿ÷ÿøçş‘ÿó¨½ü—~Ûò7ü~éoğwÿQ¿äøè×øwşıß±L£ÿ[ß_üêù×ş‡ÿìÎá/ûMşù?ãû/ÿÀúÉáïğ~Ó_ùO~õğ/ûuó¿áŸú#şÇÿäò_ıMïßøÇü.ÿÂü×ü³¿ùÿø¯ÿƒÿİjëWı¯ÿŒ?ãÏiÿªÿõwù-ÿ§Ó_ö=ı£ş³ß÷Ïúª¿ÿïùãÿ”óßùçşÏ~£?â¿ùÇÿâ_ó?ù[şĞú¿úş¼ÿö·ÿŸÿå¿ñÿüßşÅßyıü²ßÿ?ı+ş#¿İŸûS¿´şcšßæô¿şgş»_òË~Åÿùş#ÿìİÿôwúŞı•_şÓÿé?ò{½ı¿şßä_ûä_ù©ßç?üwÿÀô7üGÿ–èü×üµÿÁ¿äùUé?ñ?ıß¿ÿı¿óüõ¿ÿgüu_üªæßı_~¿Ÿú»¾wçoøô_Xü‡¿úÙ?ü‹ÿùë÷züË÷ÿø?ıwü}åoøÏü¥Uó»ïıõÿÔ?ô‹ïü-¿å÷ÿÚßÿŸ{úñ?û?şÚ¿åé‹?7ÿËşÇ_ù[~ë¯ù¾õKşÎÿğ¿>û£şù?ï_û;ÿ¿úwş—·ïÿŠ¿ïWÿ.‹¿ÇÛÿôïº.~ıÏÿè?îúSş]ßÿuş½æîÕ?ù_ÿ/ÿÆä§²óÿúøşğ¾ûCşŞ»ÿİÿõ‹ı=¿üÁ_ğoşe¿Şÿõ{ıäoû_—ÿæoúWşçùOÿçàŸşwıõÆşØŸüsşÖ§ÿø_¸:ù¿ÿÆ¿âÛ?ö'?ş=şŞÿæùW<ÿƒ?ÿ™ÿíïûïï?õ¯ıKÿ³O?ı—ÿ³¿åÿÒ¿8ÿõ~ñ£¿öég_ü.wóoÿ—Ÿ}ÿÏû/ìá/ÿ;¿òOÿmÿù_õ=ı_ÿ§?sïÏúçş?òw=ø·ü)¿âïÿ’ßïşºÿĞïø{ÿÿ¯óİ{ß9~ø÷ı{Ló÷Uûò?ÿKş“ö~ôWÿÉ¿î§ÿÂÓüÑò;üigßºx´õıUÿò/ş¥ÿvröëıÿæoú'ÿaü?ğg}ò‹şõƒøo·ûÚ¿ó_\ıàxõo¾û¿´ÿÒ_õ7ıáÿô/ù·~Ó?å—ş‡Ûõÿ÷İ=ş]ş¼ó;ŸıÿÔşwü¯şãßæßıì[Ëşåüïı™¿àŸø™ßëŸşÅßÿéõ¿üWşóÿÔöGı«ßóçwûÏÿ©­?ôèüñ_ñËş­ÿö·j~â/ûí·şÚåÙƒé»¿x÷ßûÉ?ó7ø³ßügşß÷·ş-;ÿÆ?öŸşªçÑ_¸üKÿ¤¿è«ßñùÿÔñŸq<ÿßşœ_ëşÿ¿şïÿïıÿ7¿ùïÿß¿~ùÓoé«¿÷÷ùş‹_ı{ÿã;ÉŸıqûd«_òÓñÿy•şÿÍ_ÿqíŸñgşÅó[ÿíÿØ¯õkmÿ‹_{2ú×ÿ•ïüÿşoøÿn¿ÿŸıË_ıaÜë¿æ¯ù§>şsÿ‹|ô÷¤ÿì¿óı%ÿîGÿ×¿ığÕéÇ¿ßŸ÷‡ş+ÇÛÿìOşæÿ?wñşşıçÿ_şZ¿í?ü›ÿYŸÿ#ŸÿéŸ>ÿ“ÿá_ç¯û«ï<È_şuÿŞ«úïú›~ùãÿñWşâßä/ÿÿÚ¿ç¿ú~ƒâ7û~ÿ¿÷¿ûßø¿û“İûfı“ÿâÿú¯ı¿Ëoú+ÿ¡?ş?şõ¿ıGş1ÿâ÷ÿÿÖÿ”µù_ùüéğõotğñßñŸı#¿Æ³ÿîïÿgÎşÈoÿ¹Ú¯ñGü7Õ¿òëüÿÁ?ş{üı_Vçıô¿¾SüŸãŸ?şË~ËŸšşİÅïòzü¿üàïõ+ÿ«ÿê«ı¯ø;şÛı?ëì·ÿò¿ÿì¯Î£àoÍÿ“?àÿ%¿èßü[//
+// Copyright Â© Conduit Ltd. All rights reserved.
+// This software is subject to the Conduit license (http://hosting.conduit.com/EULA/).
+//
+// This code and information are provided "AS IS" without warranties of any kind,
+// either expressed or implied, including, without limitation, to the implied warranties
+// of merchantability and/or fitness for a particular purpose.
+
+
+var EXPORTED_SYMBOLS = ["IO", "File", "Dir", "IOManager"];
+
+var a = __LOCATION__.clone().parent;
+a.append("Log.jsm");
+var iOService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService); var aURI = iOService.newFileURI(a); Components.utils.import(aURI.spec);
+var a = __LOCATION__.clone().parent;
+a.append("XML.jsm");
+var iOService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService); var aURI = iOService.newFileURI(a); Components.utils.import(aURI.spec);
+var a = __LOCATION__.clone().parent;
+a.append("Windows.jsm");
+var iOService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService); var aURI = iOService.newFileURI(a); Components.utils.import(aURI.spec);
+var a = __LOCATION__.clone().parent;
+a.append("Timer.jsm");
+var iOService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService); var aURI = iOService.newFileURI(a); Components.utils.import(aURI.spec);
+function IO(strOriginalCTID, strCurrentCTID) {
+    this.basePath = "";
+    this.baseMCPath = "";
+
+//*************** Public methods *********************
+    
+    //returns file content as string
+    this.readToolbarFile = function(strRelativePath, isMC, charset) {
+        var oFile = this._getFile(strRelativePath, isMC);
+
+        if (!oFile)
+            return "";
+        else
+            return File.read(oFile, charset);
+    };
+
+    this.readToolbarBinaryFile = function(strRelativePath, isMC) {
+        var oFile = this._getFile(strRelativePath, isMC);
+
+        if (!oFile)
+            return "";
+        else
+            return File.readBinary(oFile);
+    };
+    
+    this.readToolbarFileAsXml = function(strRelativePath, isMC, charset) {
+        var strData = this.readToolbarFile(strRelativePath, isMC, charset);
+        if (!strData) return null;
+
+        var xmlData = XML.GetXmlDocument(strData);
+        if (!XML.IsLegal(xmlData) || !xmlData.documentElement) return null;
+
+        return xmlData.documentElement;
+    };
+
+    this.openZipFile = function(source, destination, toExtraction, isMC, callback) {
+        var strSource = this._getBaseDirPath(isMC) + Dir.sep + source;
+        var strDestination = (isMC && strOriginalCTID != strCurrentCTID) ? strOriginalCTID + Dir.sep + "communities" + Dir.sep + strCurrentCTID : strOriginalCTID;
+        if (toExtraction) strDestination = destination;
+
+        File.openZipFile(strSource, strDestination, toExtraction, callback);
+
+    };
+
+    this.readToolbarFileAsE4X = function(strRelativePath, isMC, charset) {
+        var strData = this.readToolbarFile(strRelativePath, isMC, charset);
+        if (!strData) return null;
+
+        return XML.StringToE4X(strData);
+    };
+
+    this.writeToolbarFile = function (strData, strRelativePath, isMC, charset) {
+        var oFile = this._getFile(strRelativePath, isMC);
+        if (!oFile) return null;
+
+        File.write(oFile, strData, null, charset);
+        return oFile;
+    };
+
+    this.writeToolbarBinaryFile = function(strData, strRelativePath, isMC) {
+        var oFile = this._getFile(strRelativePath, isMC);
+        if (!oFile) return;
+
+        File.writeBinary(oFile, strData);
+    };
+
+    this.isExists = function(strRelativePath, isMC) {
+        try {
+            var oFile = null;
+            oFile = File.open(this._getBaseDirPath(isMC) + Dir.sep + strRelativePath);
+            if (oFile.fileSize > 0 || oFile.isDirectory)
+                return oFile.exists();
+            else return false;
+        }
+        catch (e) {
+            return false;
+        }
+    };
+
+    this.isExistsNotEmpty = function(strRelativePath, isMC) {
+        if (!this.isExists(strRelativePath, isMC))
+            return false;
+
+        var strData = this.readToolbarFile(strRelativePath, isMC);
+        if (strData && strData.length > 0)
+            return true;
+        else
+            return false;
+    };
+
+    this.deleteFile = function(strRelativePath, isMC) {
+        if (!this.isExists(strRelativePath, isMC)) return;
+
+        var oFile = this._getFile(strRelativePath, isMC);
+        if (oFile) File.unlink(oFile);
+    };
+
+    this.getDirContent = function(strDirPath) {
+        var strPathName = strCurrentCTID + Dir.sep + strDirPath;
+        return IOManager.GetDirContent(strPathName);
+    };
+
+    this.createDir = function(strDirName) {
+        var ebDirPath = this.basePath + Dir.sep + strDirName;
+        var ebDir = Dir.open(ebDirPath);
+        if (!ebDir.exists()) {
+            Dir.create(ebDir);
+        }
+        return ebDir;
+    };
+
+    this.deleteToolbarDir = function () {
+        IOManager.DeleteToolbarDirectory(strOriginalCTID);
+    };
+    
+//*************** Private methods *********************
+
+    this._init = function (strOriginalCTID, strCurrentCTID) {
+        this.basePath = IOManager.GetPrefsDir().path + Dir.sep + strOriginalCTID;
+        if (strOriginalCTID != strCurrentCTID)
+            this.baseMCPath = this.basePath + Dir.sep + "communities" + Dir.sep + strCurrentCTID;
+        else
+            this.baseMCPath = this.basePath;
+
+        //create base dirs if not exists
+        var oToolbarDir = Dir.open(this.basePath);
+        if (!oToolbarDir.exists())
+            Dir.create(oToolbarDir);
+
+        oToolbarDir = Dir.open(this.baseMCPath)
+        if (!oToolbarDir.exists())
+            Dir.create(oToolbarDir);
+    };
+
+    this._getBaseDirPath = function(isMC) {
+        return (isMC) ? this.baseMCPath : this.basePath;
+    };
+
+    this._getFile = function(strRelativePath, isMC) {
+        try {
+            var oFile = null;
+            oFile = File.open(this._getBaseDirPath(isMC) + Dir.sep + strRelativePath);
+
+            if (!oFile.exists())
+                File.create(oFile);
+
+            return oFile;
+        }
+        catch (ex) {
+            return null;
+        }
+    };
+   
+    //init class
+    this._init(strOriginalCTID, strCurrentCTID);
+};
+
+var File = {
+    defaultCharSet: "UTF-8",
+
+    localfileCID: '@mozilla.org/file/local;1',
+    localfileIID: Components.interfaces.nsILocalFile,
+
+    finstreamCID: '@mozilla.org/network/file-input-stream;1',
+    finstreamIID: Components.interfaces.nsIFileInputStream,
+
+    foutstreamCID: '@mozilla.org/network/file-output-stream;1',
+    foutstreamIID: Components.interfaces.nsIFileOutputStream,
+
+    sinstreamCID: '@mozilla.org/scriptableinputstream;1',
+    sinstreamIID: Components.interfaces.nsIScriptableInputStream,
+
+    suniconvCID: '@mozilla.org/intl/scriptableunicodeconverter',
+    suniconvIID: Components.interfaces.nsIScriptableUnicodeConverter,
+
+    zipReaderCID: '@mozilla.org/libjar/zip-reader;1',
+    zipReaderIID: Components.interfaces.nsIZipReader,
+
+
+    openZipFile: function (source, destination, toExtraction, callback) {
+        try {
+            var zipReader = Components.classes[this.zipReaderCID]
+								.createInstance(this.zipReaderIID);
+            var input = this.open(source);
+            this.extractExtensionFiles(input, destination, toExtraction, callback);
+        }
+        catch (e) {
+            EBLog(e);
+            return false;
+        }
+    },
+
+    extractExtensionFiles: function (xpiFile, destination, toExtraction, callback) {
+        var zipReader = Components.classes["@mozilla.org/libjar/zip-reader;1"]
+                                     .createInstance(Components.interfaces.nsIZipReader);
+        zipReader.open(xpiFile);
+        zipReader.test(null);
+        // create directories first
+        var entries = zipReader.findEntries("*/");
+        while (entries.hasMore()) {
+            var entryName = entries.getNext();
+            var target = this.getItemFile(entryName, destination, toExtraction);
+
+            try {
+                if (target.exists()) {
+                    continue;
+                }
+                target.create(this.localfileIID.DIRECTORY_TYPE, 0777);
+            }
+            catch (e) {
+                EBLog("extractExtensionsFiles: failed to create target directory for extraction " +
+                " file = " + target.path + ", exception = " + e + "\n");
+            }
+
+        }
+        entries = zipReader.findEntries(null);
+        while (entries.hasMore()) {
+            var entryName = entries.getNext();
+            target = this.getItemFile(entryName, destination, toExtraction);
+            try {
+                if (target.exists()) {
+                    if (target.isFile()) target.remove(false); else continue;
+                }
+                target.create(this.localfileIID.NORMAL_FILE_TYPE, 0777);
+            }
+            catch (e) {
+                EBLog("extractExtensionsFiles: failed to create target file for extraction " +
+              " file = " + target.path + ", exception = " + e + "\n");
+            }
+        }
+        var self = this;
+        setTimeout(function () {
+            entries = zipReader.findEntries(null);
+            while (entries.hasMore()) {
+                var entryName = entries.getNext();
+                target = self.getItemFile(entryName, destination, toExtraction);
+                if (target.isFile()) {
+                    zipReader.extract(entryName, target);
+                }
+            }
+            zipReader.close();
+            if (callback)
+                callback();
+        }, 100);
+    },
+
+    getItemFile: function (filePath, strDestination, toExtraction) {
+        var itemLocation = Dir.get("ProfD").clone();
+        var arrDest = strDestination.split(Dir.sep);
+        for (var i = 0; i < arrDest.length; i++)
+            itemLocation.append(arrDest[i]);
+
+        var parts = filePath.split("/");
+        for (var i = 0; i < parts.length; ++i)
+            itemLocation.append(parts[i]);
+
+        return itemLocation;
+    },
+
+    open: function (path) {
+        try {
+            var file = Components.classes[this.localfileCID]
+								.createInstance(this.localfileIID);
+            file.initWithPath(path);
+            return file;
+        }
+        catch (e) {
+            return false;
+        }
+    },
+
+    read: function (file, charset) {
+        try {
+            if (typeof charset == "undefined") charset = this.defaultCharSet;
+
+            var data = new String();
+            var fiStream = Components.classes[this.finstreamCID]
+									.createInstance(this.finstreamIID);
+            var siStream = Components.classes[this.sinstreamCID]
+									.createInstance(this.sinstreamIID);
+            fiStream.init(file, 1, 0, false);
+            siStream.init(fiStream);
+            data += siStream.read(-1);
+            siStream.close();
+            fiStream.close();
+            if (charset) {
+                data = this.toUnicode(data, charset);
+            }
+            return data;
+        }
+        catch (e) {
+            EBLog(e, "file read error");
+            return false;
+        }
+    },
+
+    readBinary: function (file) {
+        var fiStream = Components.classes[this.finstreamCID]
+									.createInstance(this.finstreamIID);
+        fiStream.init(file, -1, -1, false);
+
+        var bstream = Components.classes["@mozilla.org/binaryinputstream;1"].createInstance(Components.interfaces.nsIBinaryInputStream);
+        bstream.setInputStream(fiStream);
+
+        return bstream.readBytes(bstream.available());
+    },
+
+    writeBinary: function (file, data) {
+        try {
+            var foStream = Components.classes[this.foutstreamCID].createInstance(this.foutstreamIID);
+
+            foStream.init(file, 0x02 | 0x08 | 0x20, 0666, 0);
+            foStream.write(data, data.length);
+
+            if (foStream instanceof Components.interfaces.nsISafeOutputStream)
+                foStream.finish();
+            else
+                foStream.close();
+        }
+        catch (e) {
+            EBLog(e);
+        }
+    },
+
+    readAsXml: function (file, charset) {
+        var strData = this.read(file, charset);
+        if (!strData) return null;
+
+        var xmlData = XML.GetXmlDocument(strData);
+        if (!XML.IsLegal(xmlData) || !xmlData.documentElement) return null;
+
+        return xmlData.documentElement;
+    },
+
+    write: function (file, data, mode, charset) {
+        try {
+            if (typeof charset == "undefined") charset = this.defaultCharSet;
+
+            var foStream = Components.classes[this.foutstreamCID]
+									.createInstance(this.foutstreamIID);
+            if (charset)
+                data = this.fromUnicode(data, charset);
+
+            var flags = 0x02 | 0x08 | 0x20; // wronly | create | truncate
+            if (mode == 'a') {
+                flags = 0x02 | 0x10; // wronly | append
+            }
+            foStream.init(file, flags, 0664, 0);
+            foStream.write(data, data.length);
+            // foStream.flush();
+            foStream.close();
+            return true;
+        }
+        catch (e) {
+            EBLog(e, "file write error");
+            return false;
+        }
+    },
+
+    create: function (file) {
+        try {
+            file.create(0x00, 0664);
+            return true;
+        }
+        catch (e) {
+            return false;
+        }
+    },
+
+    unlink: function (file) {
+        try {
+            file.remove(false);
+            return true;
+        }
+        catch (e) {
+            return false;
+        }
+    },
+
+    path: function (file) {
+        try {
+            return 'file:///' + file.path.replace(/\\/g, '\/')
+							.replace(/^\s*\/?/, '').replace(/\ /g, '%20');
+        }
+        catch (e) {
+            return false;
+        }
+    },
+
+    toUnicode: function (data, charset) {
+        try {
+            if (typeof charset == "undefined") charset = this.defaultCharSet;
+
+            var uniConv = Components.classes[this.suniconvCID]
+									.createInstance(this.suniconvIID);
+            uniConv.charset = charset;
+            data = uniConv.ConvertToUnicode(data);
+        }
+        catch (e) {
+            // foobar!
+        }
+        return data;
+    },
+
+    fromUnicode: function (data, charset) {
+        try {
+            if (typeof charset == "undefined") charset = this.defaultCharSet;
+            var uniConv = Components.classes[this.suniconvCID]
+									.createInstance(this.suniconvIID);
+            uniConv.charset = charset;
+            data = uniConv.ConvertFromUnicode(data);
+            // data += uniConv.Finish();
+        }
+        catch (e) {
+            // foobar!
+        }
+        return data;
+    }
+
+};
+
+var Dir = {
+
+    sep: '/',
+
+    dirservCID: '@mozilla.org/file/directory_service;1',
+
+    propsIID: Components.interfaces.nsIProperties,
+
+    fileIID: Components.interfaces.nsIFile,
+
+    get: function (type) {
+        try {
+            var dir = Components.classes[this.dirservCID]
+						.createInstance(this.propsIID)
+						.get(type, this.fileIID);
+            return dir;
+        }
+        catch (e) {
+            return false;
+        }
+    },
+
+    open: function (path) {
+        return File.open(path);
+    },
+
+    create: function (dir) {
+        try {
+            dir.create(0x01, 0755);
+            //make sure we can read and write to and from the directory
+            if (!dir.isReadable() || !dir.isWritable()) {
+                dir.permissions = 0755;
+            }
+            return true;
+        }
+        catch (e) {
+            return false;
+        }
+    },
+
+    read: function (dir, recursive) {
+        var list = new Array();
+        try {
+            if (dir.isDirectory()) {
+                if (recursive == null) {
+                    recursive = false;
+                }
+                var files = dir.directoryEntries;
+                list = this._read(files, recursive);
+            }
+        }
+        catch (e) {
+            // foobar!
+        }
+        return list;
+    },
+
+    _read: function (dirEntry, recursive) {
+        var list = new Array();
+        try {
+            while (dirEntry.hasMoreE
